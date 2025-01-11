@@ -1,0 +1,276 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+% https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+% \begin{center}
+%     \textbf{\Huge \scshape Manish Kumar} \\ \vspace{1pt}
+%     \small ********** $|$ \href{mailto:mverma6250@gmail.com}{{mverma6250@gmail.com}} $|$ 
+%     \href{https://www.linkedin.com/in/manish-kumar-373b86176/}{\bf LinkedIn} $|$
+%     \href{https://github.com/manisnitt}{\bf GitHub} $|$
+%     \href{https://www.youtube.com/channel/UCacvJAgrPTjSEdnZObMzpqQ}{\bf YouTube}
+% \end{center}
+
+
+
+\begin{center}
+    \textbf{\Huge \scshape Sai Prasad Padhy} \\ \vspace{1pt}
+    \small +91-9550003197 $|$ \href{mailto:mverma6250@gmail.com}{{saiprasadpadhy@gmail.com}}    \\ 
+    \small  
+    \href{https://www.linkedin.com/in/saiprasadpadhy/}{\bf LinkedIn} $|$
+    \href{https://github.com/padhysai}{\bf GitHub} 
+    
+\end{center}
+% \href{https://www.youtube.com/channel/UCacvJAgrPTjSEdnZObMzpqQ}{\bf YouTube}
+
+
+
+%-----------PROJECTS-----------
+\section{Profile}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item 
+Data Engineer with 5+ years of experience building large-scale data pipelines, ETL processes, and data warehouse solutions. Utilized technologies like \textbf{Python, SQL, Spark, Databricks, and ADF} to develop multi-terabyte scalable big data solutions for Fortune 100 manufacturing and pharmaceutical companies.
+\end{itemize}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{:\hspace{0.06cm}  Python, SQL} \\
+     \textbf{Big Data Technologies}{:\hspace{0.49cm}     Spark, PySpark, Spark SQL, YARN, Kubernetes, Hadoop, Hive, Impala } \\
+     \textbf{Streaming Technology}{:\hspace{0.51cm} Kafka, Spark Structured Streaming} \\
+     \textbf{Cloud computing}{:\hspace{1.38cm} ADF, Databricks, ADLS, Amazon S3, Event Hub, Azure VM } \\
+     \textbf{Data Engineering Tools}{:\hspace{0.28cm} Azure DevOps, Data Modelling, ETL/ELT data Pipeline, Delta Lake}\\
+     \textbf{Orchestration}{:\hspace{2.02cm} ADF, Airflow, Redwood} \\
+     \textbf{Familiar}{:\hspace{3cm} FastAPI, Synapse, Microsoft Fabric} \\
+     
+     
+    }}
+ \end{itemize}
+
+% \section{Technical Skills}
+% \begin{itemize}[left=0.15in, label={}]
+%     \item \textbf{Programming Languages:} Python, SQL, Scala
+%     \item \textbf{Big Data Technologies:} Spark, PySpark, Spark SQL, YARN, Kubernetes, Hadoop, Hive, Impala
+%     \item \textbf{Data Engineering Tools:} Azure Devops, Data Modelling, ETL/ELT data Pipeline
+%     \item \textbf{Orchestration:} Airflow, Kubernetes, CA Autosys
+%     \item \textbf{Familiar:} FastAPI, Elasticsearch, ADF, ADLS, Azure Blob, Amazon S3, Databricks
+%     \item \textbf{Developer Tools:} Git, VS Code, Visual Studio, PyCharm, IntelliJ
+% \end{itemize}
+
+%-------------------------------------------
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+   
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+% -------------------------------------------
+
+    \resumeSubheading
+      {Tech Mahindra}{January 2022 - Present}
+      {Senior Data Engineer}{Hyderabad, India}
+      \resumeItemListStart
+      \resumeItem{Led a team of 2 Data Engineers in designing, developing, and optimizing data pipelines and ETL processes. }
+      \resumeItem{Developed an automated system by aggregating data from multiple sources where business can easily find reliable customers for procuring raw materials. }
+        % \item Developed an automated invoicing system, enabling dynamic pricing adjustments on cloud service provider invoices.
+        \resumeItem {Integrated and processed Procurement and shipment data from multiple sources including \textbf{AWS, Azure, SQL Server, and SAP}, handling various file formats like JSON, CSV, and Parquet.}
+        \resumeItem {Implemented Spark optimization techniques such as \textbf{caching, multithreading, broadcast joins and Delta lake optimizations}, resulting in a 20\% decrease in processing time for handling a daily load of around \textbf{3 Million records}.}
+    \resumeItemListEnd
+
+     \resumeSubheading
+      {Tech Mahindra}{January 2022 - Present}
+      {Data Engineer}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem {Migrated the entire data platform from on-prem to Azure Databricks, including code migration, code optimization, and data validation between on-premises and Databricks, achieving a 30\% cost reduction.}
+        \resumeItem{Designed and developed advanced scheduling capabilities using \textbf{Azure Data Factory (ADF)}, reducing manual intervention and streamlining workflows.}
+         \resumeItem {Developed a robust framework to handle data from various file formats, including \textbf{CSV, Excel, JSON, and Parquet}, with support for multiple load types such as \textbf{full, append, and merge}.}
+        
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cognizant}{June 2019 - January 2022}
+      {Data Engineer}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem {Delivered a project to migrate legacy on-premise processes to the cloud using Big Data technologies (Spark), reducing processing time by 20\%.}
+\resumeItem {Developed Azure Data Factory pipelines to perform daily data migration from Microsoft Dynamics to SQL Server, handling approximately 40 million records across 25 tables.}
+\resumeItem {
+Optimized overall process performance through \textbf{Spark performance tuning}, improving job run times by 20\% and efficiently managing a \textbf{15Terabyte(TB)} dataset containing approximately \textbf{12 billion} records.
+}
+\resumeItem{Created Power Automate, Azure functions to ingest data from SFTP, SharePoint to ADLS}
+      \resumeItemListEnd
+
+
+%       \resumeSubheading
+%       {Standav}{July 2019 - March 2020}
+%       {Data Analyst}{Bangalore, India}
+%       \resumeItemListStart
+%         \resumeItem {Analysed more than 30,000 customer sales data to find the bottlenecks in the
+% business process.}
+% \resumeItem {Worked as Salesforce Admin and got exposure to the sales cloud.}
+
+        
+%       \resumeItemListEnd
+
+      
+
+  \resumeSubHeadingListEnd
+
+
+
+    % \resumeSubHeadingListStart
+    %   \resumeProjectHeading
+    %       {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+    %       \resumeItemListStart
+    %         \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+    %         \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+    %         \resumeItem{Visualized GitHub data to show collaboration}
+    %         \resumeItem{Used Celery and Redis for asynchronous tasks}
+    %       \resumeItemListEnd
+    %   \resumeProjectHeading
+    %       {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+    %       \resumeItemListStart
+    %         \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+    %         \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+    %         \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+    %         \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+    %       \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lovely Professional University}{Jalandhar, Punjab}
+      {Bachelor of Technology in Mechanical Engineering}{July 2015 - June 2019}
+      \resumeSubheading
+      {Sri Chaitanya Junior College}{Hyderabad, Telangana}
+      {Senior Secondary School}{April 2013 - Mar 2015}
+    
+  \resumeSubHeadingListEnd
+%-------------------------------
+
+%
+
+\end{document}
